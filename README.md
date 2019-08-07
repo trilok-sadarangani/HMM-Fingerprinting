@@ -19,7 +19,7 @@ can be obtained by self.obs probs[b,o[b],s]. Here, we assume the RSSI values of 
 conditionally independent. Therefore, you can decompose the probability of observing the vector o, P(O = o|S = s)
 into a product of individual likelihood functions:
 
-
+![alt text](https://github.com/trilok-sadarangani/HMM-Fingerprinting/blob/master/Images/Probability%20Likelihood.png)
 
 Packages: 
 $ pip install numpy matplotlib ipywidge
