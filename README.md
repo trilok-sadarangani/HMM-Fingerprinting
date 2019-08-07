@@ -9,6 +9,8 @@ case in buildings. The same message can be received with different signal streng
 One way to overcome this problem is to collect the signal strengths for each position and construct a probability
 distribution. This procedure is called fingerprinting.
 
+![alt text] (https://github.com/trilok-sadarangani/HMM-Fingerprinting/blob/master/Images/An%20example%20observation%20model.png)
+
 The indoor environment is represented by a grid where each cell corresponds to a state in the HMM, which makes
 the total number of states n state = (width * length). Thus, a probability distribution of the location of the
 target sensor is a vector of length n states. The transition probabilities P(St+1|St) are stored in a 2-dimensional
@@ -20,6 +22,8 @@ conditionally independent. Therefore, you can decompose the probability of obser
 into a product of individual likelihood functions:
 
 ![alt text](https://github.com/trilok-sadarangani/HMM-Fingerprinting/blob/master/Images/Probability%20Likelihood.png)
+
+![alt text] (https://github.com/trilok-sadarangani/HMM-Fingerprinting/blob/master/Images/Example%20Monitoring%20and%20Hindsight%20Plots.png)
 
 Packages: 
 $ pip install numpy matplotlib ipywidge
